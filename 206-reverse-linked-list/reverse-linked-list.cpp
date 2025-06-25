@@ -14,14 +14,14 @@ public:
         if(head==nullptr){
             return head;
         }
-        ListNode*current=head;
+        ListNode* current=head;
         ListNode*next;
         ListNode*prev;
         while(current!=nullptr){
-        next=current->next;
-        current->next=prev;
-        prev=current;
-        current=next;
+            next=current->next;
+            current->next=prev;
+            prev=current;
+            current=next;
         }
         return prev;
     }
